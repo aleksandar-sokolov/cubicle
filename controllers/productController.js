@@ -1,14 +1,13 @@
 const { Router } = require('express');
-const { route } = require('../routes');
 
 const router = Router();
 
 router.get('/', (req, res) => {
-    res.render('home');
+    res.render('home', {title: 'Home Page'});
 });
 
 router.get('/create', (req, res) => {
-    res.render('create');
+    res.render('create', {title: 'Create Page'});
 });
 
 module.exports = router; 
