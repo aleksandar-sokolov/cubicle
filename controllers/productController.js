@@ -21,7 +21,23 @@ router.post('/create', (req, res) => {
 });
 
 router.get('/details/:productId', (req, res) => {
-    res.render('details', { title: `Details ${req.params.productId}` })
+    let product = productService.getOne(req.params.productId);
+    res.render('details', { title: `Details ${product.name}`, product });
 });
+
+// function validateProduct(req, res, next) {
+//     let isValid = true;
+//     let body = req.body;
+    
+//     if (body.name.trim().lenght < 2) {
+//         isValid = false;
+//     } else if (body.imageUrl.lenght < 10) {
+//         isValid = false;
+//     }
+
+//     if (isValid) {
+//         next();
+//     }
+// }
 
 module.exports = router; 
