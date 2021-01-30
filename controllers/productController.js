@@ -14,9 +14,15 @@ router.get('/create', (req, res) => {
 router.post('/create', (req, res) => {
     // TODO: !!!validate inputs
 
-    productService.create(req.body);
+    // productService.create(req.body); //without callback for createService
+    productService.create(req.body, (err) => {
+        if (err) {
+            return res.status(500).end();
+        }
+        res.redirect('/products');
 
-    res.redirect('/products');
+    });
+    // res.redirect('/products'); //without callback for createService
 
 });
 
@@ -25,19 +31,6 @@ router.get('/details/:productId', (req, res) => {
     res.render('details', { title: `Details ${product.name}`, product });
 });
 
-// function validateProduct(req, res, next) {
-//     let isValid = true;
-//     let body = req.body;
-    
-//     if (body.name.trim().lenght < 2) {
-//         isValid = false;
-//     } else if (body.imageUrl.lenght < 10) {
-//         isValid = false;
-//     }
 
-//     if (isValid) {
-//         next();
-//     }
-// }
 
 module.exports = router; 
