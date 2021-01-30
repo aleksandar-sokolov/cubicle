@@ -4,7 +4,7 @@ const productService = require('../services/productService');
 const router = Router();
 
 router.get('/', (req, res) => {
-    res.render('home', { title: 'Home Page' });
+    res.render('home', { title: 'Home Page', products: productService.getAll() });
 });
 
 router.get('/create', (req, res) => {

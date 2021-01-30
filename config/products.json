@@ -1,16 +1,1 @@
-[
-    {
-        "id": "1fwsoo7oskkibgqry",
-        "name": "rubic's cube",
-        "description": "test",
-        "imageUrl": "https://static.posters.cz/image/750/%D0%BF%D0%BB%D0%B0%D1%81%D1%82%D0%BC%D0%B0%D1%81%D0%BE%D0%B2%D0%B0-%D1%80%D0%B0%D0%BC%D0%BA%D0%B0-harry-potter-chamber-of-secrets-i71413.jpg",
-        "level": "1"
-    },
-    {
-        "id": "1fwsoobdkkkibi87d",
-        "name": "rubic's cube",
-        "description": "Original rubic's cube",
-        "imageUrl": "https://n2.sdlcdn.com/imgs/h/w/p/rubik-cube-SDL829582060-1-92b78.jpeg",
-        "level": "3"
-    }
-]
+[{"id":"1fwsoo7oskkibgqry","name":"rubic's cube","description":"test","imageUrl":"https://static.posters.cz/image/750/%D0%BF%D0%BB%D0%B0%D1%81%D1%82%D0%BC%D0%B0%D1%81%D0%BE%D0%B2%D0%B0-%D1%80%D0%B0%D0%BC%D0%BA%D0%B0-harry-potter-chamber-of-secrets-i71413.jpg","level":"1"},{"id":"1fwsoobdkkkibi87d","name":"rubic's cube","description":"Original rubic's cube","imageUrl":"https://n2.sdlcdn.com/imgs/h/w/p/rubik-cube-SDL829582060-1-92b78.jpeg","level":"3"},{"id":"1fwsoobvokkjqn3lf","name":"hard rubik's cube","description":"hard rubik's cube","imageUrl":"https://inteng-storage.s3.amazonaws.com/images/JULY/Erno_Rubik_Megaminx_Speed_Cube.jpg","level":"6"}]
